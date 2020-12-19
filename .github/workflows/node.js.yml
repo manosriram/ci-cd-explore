@@ -22,7 +22,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd /var/www/ci-cd-explore
     - run: npm i
     - run: pm2 kill
     - run: pm2 start index.js

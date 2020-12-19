@@ -3,8 +3,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
     return res.send({
-        message:
-            "Hello, there from Node Github actions application after update"
+        message: "Update with pm2 running."
     });
 });
 
